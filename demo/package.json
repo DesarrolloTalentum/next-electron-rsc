@@ -11,14 +11,13 @@
     "build:next": "next build",
     "build:ts": "tsc --project tsconfig-electron.json",
     "build:electron": "electron-builder --config electron-builder.yml",
-    "start": "tsc-watch --noClear --onSuccess 'electron .' --project tsconfig-electron.json",
+    "start": "tsc-watch --noClear --onSuccess \"electron .\" --project tsconfig-electron.json",
     "open": "./dist/mac-arm64/Next\\ Electron\\ RSC.app/Contents/MacOS/Next\\ Electron\\ RSC"
   },
   "license": "ISC",
   "dependencies": {
     "electron-default-menu": "^1.0.2",
     "iron-session": "^8.0.4",
-    "next-electron-rsc": "*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
