@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm -rf .next out",
     "start": "next dev --turbo",
-    "build:all": "yarn clean && yarn build:next && yarn build:fix && yarn build:pkg",
+    "build:all": "npm run clean && npm run build:next && npm run build:fix && npm run build:pkg",
     "build:next": "next build",
     "build:fix": "sed -i '' 's/process.chdir(__dirname)//' .next/standalone/pkg/server.js",
     "build:pkg": "mkdir -p out && cd .next/standalone/pkg && pkg . --compress=GZip -t node18-macos-x64",

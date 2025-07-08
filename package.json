@@ -4,7 +4,6 @@
   "description": "demo",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
     "clean": "yarn workspaces foreach -A run clean && rm -rf node_modules",
     "build": "yarn workspaces foreach -At run build",
     "start": "yarn workspaces foreach -Apt run start",
@@ -42,7 +41,6 @@
     "hoistingLimits": "dependencies"
   },
   "dependencies": {
-    "next-electron-rsc": "^0.3.0",
     "next": "^15.3.5"
   }
 }
